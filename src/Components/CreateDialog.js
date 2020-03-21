@@ -24,7 +24,6 @@ export default function CreateDialog({ classes, index, order, handleCreate }) {
   };
 
   const handleSave = e => {
-    console.log("running");
     e.preventDefault();
     handleCreate(editedOrder);
     setOpen(false);

@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import memoize from "memoize-one";
-
 import { FixedSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
-
-// import { makeStyles } from "@material-ui/styles";
 import { makeStyles } from "@material-ui/core/styles";
-
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -83,7 +79,6 @@ const TableColumns = ({ classes, columns }) => {
             key={colIndex}
             component="div"
             variant="head"
-            // align={column.numeric || false ? "right" : "left"}
             className={clsx(
               classes.cell,
               classes.column,
@@ -121,7 +116,6 @@ const Row = ({
             key={item.id + colIndex}
             component="div"
             variant="body"
-            // align={column.numeric || false ? "right" : "left"}
             className={clsx(
               classes.cell,
               !column.width && classes.expandingCell
@@ -213,31 +207,26 @@ const columns = [
   {
     label: "Customer Email",
     dataKey: "customer_email",
-    numeric: true,
     width: 200
   },
   {
     label: "Product",
     dataKey: "product",
-    numeric: true,
     width: 120
   },
   {
     label: "Quantity",
     dataKey: "quantity",
-    numeric: true,
     width: 75
   },
   {
     label: "",
     dataKey: "delete",
-    numeric: true,
     width: 75
   },
   {
     label: "",
     dataKey: "edit",
-    numeric: true,
     width: 75
   }
 ];

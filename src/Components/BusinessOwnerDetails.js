@@ -33,12 +33,6 @@ const useStyles = makeStyles({
 function BusinessOwnerDetails({ userProfile }) {
   const classes = useStyles();
 
-  useEffect(() => {
-    if (userProfile) {
-      console.log(userProfile);
-    }
-  }, [userProfile]);
-
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
