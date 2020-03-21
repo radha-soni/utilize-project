@@ -54,7 +54,7 @@ const useTableStyles = makeStyles(theme => ({
     border: "none",
     overflow: "hidden",
     boxSizing: "border-box",
-    margin: "0 20px",
+    margin: "0 14px",
     wordBreak: "break-word",
     padding: 5
   },
@@ -212,22 +212,22 @@ const columns = [
   {
     label: "Product",
     dataKey: "product",
-    width: 120
+    width: 100
   },
   {
     label: "Quantity",
     dataKey: "quantity",
-    width: 75
+    width: 70
   },
   {
     label: "",
     dataKey: "delete",
-    width: 75
+    width: 50
   },
   {
     label: "",
     dataKey: "edit",
-    width: 75
+    width: 50
   }
 ];
 

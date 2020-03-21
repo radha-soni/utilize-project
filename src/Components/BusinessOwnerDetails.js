@@ -8,8 +8,8 @@ import Avatar from "@material-ui/core/Avatar";
 const useStyles = makeStyles({
   root: {
     width: 350,
-    height: "91vh",
-    marginTop: "65px",
+    height: "100%",
+    // marginTop: "130px",
     textAlign: "center"
   },
 
@@ -18,7 +18,8 @@ const useStyles = makeStyles({
     margin: "auto",
     padding: 10,
     color: "textSecondary",
-    fontWeight: 600
+    fontWeight: 600,
+    wordBreak: "break-word"
   },
 
   avatar: {
