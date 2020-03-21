@@ -1,11 +1,8 @@
 import React from "react";
-import Orders from "./OrderDetails";
-import AppLogo from "./appLogo";
+import AppLogo from "./AppLogo";
 import BusinessOwnerDetails from "./BusinessOwnerDetails";
-import ExampleWrapper from "./test";
-import "./dashboard.css";
-import Button from "@material-ui/core/Button";
-import AddIcon from "@material-ui/icons/Add";
+import Orders from "./Orders";
+import "../App.css";
 
 function DashBoard({ loggedIn, setLoggedIn, userProfile }) {
   return (
@@ -13,7 +10,7 @@ function DashBoard({ loggedIn, setLoggedIn, userProfile }) {
       <AppLogo loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
 
       <BusinessOwnerDetails userProfile={userProfile} />
-      <ExampleWrapper />
+      <Orders />
     </div>
   );
 }

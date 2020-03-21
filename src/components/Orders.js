@@ -21,9 +21,6 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import Button from "@material-ui/core/Button";
 import EditDialog from "./EditDialog";
 import { dummyData } from "../store/dummyData";
-import AddIcon from "@material-ui/icons/Add";
-
-import createData from "./data";
 import CreateDialog from "./CreateDialog";
 
 const useTableStyles = makeStyles(theme => ({
@@ -279,7 +276,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const App = () => {
+const Orders = () => {
   const classes = useStyles();
 
   const [orders, setOrders] = useState(data);
@@ -333,4 +330,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Orders;
