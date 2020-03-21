@@ -178,7 +178,9 @@ function Orders() {
         <Table className={classes.table} aria-label="customized table">
           <TableHead>
             <TableRow>
-              <StyledTableCell className={classes.cell}>Id</StyledTableCell>
+              <StyledTableCell className={classes.cell}>
+                Order Id
+              </StyledTableCell>
               <StyledTableCell className={classes.cell}>
                 Customer name
               </StyledTableCell>

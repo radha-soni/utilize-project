@@ -3,6 +3,8 @@ import Login from "./Components/login";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import DashBoard from "./Components/DashBoard";
+import Test from "./Components/test";
+import ExampleWrapper from "./Components/test";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
